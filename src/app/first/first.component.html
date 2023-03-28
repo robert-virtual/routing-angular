@@ -1,0 +1,13 @@
+
+<table>
+  <thead>
+  <tr>
+    <th *ngFor="let prop of props">{{prop}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr style="cursor: pointer" *ngFor="let character of characters" (click)="goToSecond(character)">
+    <td *ngFor="let prop of props">{{ character[prop]}}</td>
+  </tr>
+  </tbody>
+</table>

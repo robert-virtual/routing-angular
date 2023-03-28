@@ -1,0 +1,24 @@
+<p>second works!</p>
+<button (click)="goBack()">Go Back</button>
+
+
+<form (submit)="update($event)">
+  <input [(ngModel)]="character.name" placeholder="name" #ctrl name="name"
+         style="display:block;margin: 10px 0 "/>
+  <input [(ngModel)]="character.gender" placeholder="gender" #ctrl name="gender"
+         style="display:block;margin: 10px 0 "/>
+  <input [(ngModel)]="character.species" placeholder="species" #ctrl name="species"
+         style="display:block;margin: 10px 0 "/>
+  <input [(ngModel)]="character.status" placeholder="status" #ctrl name="status"
+         style="display:block;margin: 10px 0 "/>
+  <input [(ngModel)]="character.type" placeholder="type" #ctrl name="type"
+         style="display:block;margin: 10px 0 "/>
+  <label>
+    Created
+    <input [(ngModel)]="character.created" type="date" placeholder="created" #ctrl name="created"
+           style="display:block;margin: 10px 0 "/>
+  </label>
+
+  <button>update</button>
+</form>
+
